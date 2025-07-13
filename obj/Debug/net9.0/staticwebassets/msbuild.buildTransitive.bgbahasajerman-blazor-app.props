@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/bgbahasajerman-blazor-app.props" />
+</Project>

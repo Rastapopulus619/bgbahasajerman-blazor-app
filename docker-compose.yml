@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  blazor-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: bgbahasajerman-blazor-app
+    ports:
+      - "8082:80"
+    networks:
+      - blazor-network
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    volumes:
+      - .:/app/source:ro
+
+networks:
+  blazor-network:
+    driver: bridge

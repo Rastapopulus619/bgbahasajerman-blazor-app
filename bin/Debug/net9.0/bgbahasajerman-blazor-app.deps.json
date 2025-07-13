@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "bgbahasajerman-blazor-app/1.0.0": {
+        "runtime": {
+          "bgbahasajerman-blazor-app.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bgbahasajerman-blazor-app/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
