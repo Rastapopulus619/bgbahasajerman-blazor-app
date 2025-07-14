@@ -66,3 +66,4 @@ coverage/
 docker-compose.override.yml
 .env
 data-protection-keys/
+Properties/launchSettings.json
