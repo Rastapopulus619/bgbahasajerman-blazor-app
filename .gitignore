@@ -1,0 +1,68 @@
+# OS & UI noise
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor folders
+.vs/
+.vscode/
+
+# User/machine-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+out/
+Debug/
+Release/
+publish/
+
+# NuGet artifacts
+*.nupkg
+*.snupkg
+project.assets.json
+project.nuget.cache
+artifacts/
+
+# MSBuild noise
+*.builds
+*.tlog
+*.log
+*.cache
+*.ilk
+*.pdb
+*.mdb
+
+# Temporary/Copilot/cache
+*.db
+*.db-shm
+*.db-wal
+*.bak
+*.tmp
+*.pid
+**/CopilotIndices/
+**/staticwebassets/
+**/*.GeneratedMSBuildEditorConfig.editorconfig
+
+# Dotnet runtime
+*.deps.json
+*.runtimeconfig.json
+apphost.exe
+
+# Test & Coverage
+TestResults/
+coverage/
+*.lcov
+
+# JetBrains/Rider (optional)
+.idea/
+
+# Docker development (local-only)
+docker-compose.override.yml
+.env
+data-protection-keys/
