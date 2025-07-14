@@ -1,4 +1,4 @@
-﻿# OS & UI noise
+# OS & UI noise
 *.DS_Store
 Thumbs.db
 ehthumbs.db
@@ -61,8 +61,6 @@ coverage/
 # JetBrains/Rider (optional)
 .idea/
 
-# Optional: ignore Docker local volumes/logs if present
-docker-volume-data/
-*.log
-
-# Optional: pusiiing
+# Docker development (local-only)
+docker-compose.override.yml
+.env
