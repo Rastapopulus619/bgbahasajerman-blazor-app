@@ -1,0 +1,75 @@
+﻿# OS & UI noise
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor folders
+.vs/
+.vscode/
+
+# User/machine-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# NuGet artifacts
+*.nupkg
+*.snupkg
+project.assets.json
+project.nuget.cache
+artifacts/
+
+# MSBuild noise
+*.builds
+*.tlog
+*.log
+*.cache
+*.ilk
+*.pdb
+*.mdb
+
+# Temporary/Copilot/cache
+*.db
+*.db-shm
+*.db-wal
+*.bak
+*.tmp
+*.pid
+**/CopilotIndices/
+**/staticwebassets/
+**/*.GeneratedMSBuildEditorConfig.editorconfig
+
+# Dotnet runtime
+*.deps.json
+*.runtimeconfig.json
+apphost.exe
+
+# Test & Coverage
+TestResults/
+coverage/
+*.lcov
+
+# JetBrains/Rider (optional)
+.idea/
+
+# Optional: ignore Docker local volumes/logs if present
+docker-volume-data/
+*.log
+
+/obj/bgbahasajerman-blazor-app.csproj.nuget.dgspec.json
+/obj/bgbahasajerman-blazor-app.csproj.nuget.g.props
+/obj/Debug/net9.0/bgbahasajerman-blazor-app.AssemblyInfo.cs
+/obj/Debug/net9.0/bgbahasajerman-blazor-app.AssemblyInfoInputs.cache
+/obj/Debug/net9.0/bgbahasajerman-blazor-app.assets.cache
+/obj/Debug/net9.0/bgbahasajerman-blazor-app.GeneratedMSBuildEditorConfig.editorconfig
+/obj/project.assets.json
+/obj/project.nuget.cache
