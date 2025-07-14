@@ -20,6 +20,7 @@ obj/
 out/
 Debug/
 Release/
+publish/
 
 # NuGet artifacts
 *.nupkg

@@ -1,25 +1,16 @@
-# Use the official .NET 9 SDK image for building
+# Stage 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-WORKDIR /app
-
-# Copy project file and restore dependencies
+WORKDIR /src
 COPY *.csproj ./
 RUN dotnet restore
-
-# Copy source code and build
 COPY . ./
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish -c Debug -o /app/build
 
-# Use the runtime image for the final container
-FROM mcr.microsoft.com/dotnet/aspnet:9.0
+# Stage 2: Runtime
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS runtime
 WORKDIR /app
-COPY --from=build /app/publish .
-
-# Expose port 80
+COPY --from=build /app/build ./
 EXPOSE 80
-
-# Set environment to Production
-ENV ASPNETCORE_ENVIRONMENT=Production
+ENV ASPNETCORE_ENVIRONMENT=Development
 ENV ASPNETCORE_URLS=http://+:80
-
-ENTRYPOINT ["dotnet", "bgbahasajerman-blazor-app.dll"]
+ENTRYPOINT ["dotnet", "watch", "run"]
