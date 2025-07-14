@@ -7,17 +7,15 @@ services:
       dockerfile: Dockerfile
     container_name: bgbahasajerman-blazor-app
     ports:
-      - "8082:80"  # Back to original mapping
+      - "8082:80"
     networks:
       - blazor-network
     restart: always
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
     volumes:
-      - ./:/src
-      - ./data-protection-keys:/root/.aspnet/DataProtection-Keys
-    working_dir: /src
+      - ./:/src  # Mount project root to /src in container
+    working_dir: /src  # Set working directory to /src
 
 networks:
   blazor-network:
