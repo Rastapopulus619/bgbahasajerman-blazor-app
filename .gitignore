@@ -64,12 +64,3 @@ coverage/
 # Optional: ignore Docker local volumes/logs if present
 docker-volume-data/
 *.log
-
-/obj/bgbahasajerman-blazor-app.csproj.nuget.dgspec.json
-/obj/bgbahasajerman-blazor-app.csproj.nuget.g.props
-/obj/Debug/net9.0/bgbahasajerman-blazor-app.AssemblyInfo.cs
-/obj/Debug/net9.0/bgbahasajerman-blazor-app.AssemblyInfoInputs.cache
-/obj/Debug/net9.0/bgbahasajerman-blazor-app.assets.cache
-/obj/Debug/net9.0/bgbahasajerman-blazor-app.GeneratedMSBuildEditorConfig.editorconfig
-/obj/project.assets.json
-/obj/project.nuget.cache
