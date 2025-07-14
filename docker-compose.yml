@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   blazor-app:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
     container_name: bgbahasajerman-blazor-app
@@ -12,9 +12,9 @@ services:
       - blazor-network
     restart: always
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development  # Use Development for dev/test
     volumes:
-      - .:/app/source:ro
+      - .:/app                               # ✅ Live sync source into container
 
 networks:
   blazor-network:
